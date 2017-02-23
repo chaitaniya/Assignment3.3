@@ -1,0 +1,39 @@
+List the components of Hadoop 2.x and explain them in detail.
+
+Ans.
+The major components of Hadoop 2.x are:
+1.HDFS
+2.MapReduce
+3.YARN
+
+Hadoop2 has come up with a lot of interesting and profitable changes in
+the earlier version of hadoop.
+Hadoop 2 includes new enhanced features designed to improve system availability and scalability.
+ 
+1.HDFS
+The new version of Hadoop distributed file system includes High availability feature that
+brings a new NameNode architecture to hadoop.
+Hadoop 1.x HDFS had one namenode where data was stored in a cluster,there were high chances
+of a lone namenode would become a single point of failure within a cluster.
+The 2 main components in HDFS hadoop 2.x:
+1.High Availability
+2.HDFS Federation
+
+
+        1.The High Availability used as standby system,took control of the system immediately if the primary node would fail.
+The instantaneous standby system proves to be of great significance.
+        2.The new HDFS federation capability allowed clusters be built out horizontally with multiple NameNodes that work 
+independently but share a common data storage pool, offering better compute scaling as compared to Hadoop 1.x.
+
+
+2.MapReduce
+Hadoop does distributed processing of massive unstructured data sets across commodity computer clusters, in which each node 
+of the cluster includes its own storage. MapReduce serves two essential functions:
+ 1.. It parcels out work to various nodes within the cluster or map, 
+ 2..It organizes and reduces the results from each node into a cohesive answer to a query.
+
+3.YARN
+The concept behind YARN is to split up functionalities of resource management and job scheduling and job monitoring into separate daemons.
+The ResourceManager is the authority that arbitrates resources among all the applications in the system.
+ YARN is the prerequisite for Enterprise Hadoop, providing resource management and a central platform to deliver consistent operations, 
+security, and data governance tools across Hadoop clusters.
